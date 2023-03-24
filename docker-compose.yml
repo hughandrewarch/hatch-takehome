@@ -1,0 +1,9 @@
+services:
+  hatch-takehome:
+    container_name: hatch-takehome
+    build:
+      context: .
+      dockerfile : Dockerfile
+    image: hatch-takehome:latest
+    ports:
+      - "8887:8080" # HOST_PORT:CONTAINER_PORT
